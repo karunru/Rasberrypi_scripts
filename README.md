@@ -33,7 +33,7 @@ sudo apt-get update
 sudo apt-get install chromium-browser -y
 
 ### 日本語フォントのインストール
-sudo apt-get install ttf-kochi-gothic xfonts-intl-japanese xfonts-intl-japanese-big xfonts-kaname
+sudo apt-get install fonts-mplus xfonts-mplus
 
 ### スクリーンセーバーを起動させない
 sed -i -e 's/@xscreensaver/#@xscreensaver/g' ~/.config/lxsession/LXDE-pi/autostart
