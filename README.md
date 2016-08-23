@@ -46,6 +46,7 @@ echo -e '@xset s off\n	\
 
 ### chromiumを起動時に自動起動させる
 echo '@/usr/bin/chromium-browser --noerrdialog --kiosk http://nandakke.oedalab.jp/ 1>/dev/null 2>/dev/null' >> ~/.config/lxsession/LXDE-pi/autostart
+echo '@xdotool mousemove 0 1081' >> ~/.config/lxsession/LXDE-pi/autostart
 
 ### その他
 GUIでロケールとかタイムゾーンとか設定
