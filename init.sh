@@ -22,9 +22,7 @@ sudo apt-get install xdotool fonts-mplus xfonts-mplus -y
 ### スクリーンセーバーを起動させない
 sed -i -e 's/@xscreensaver/#@xscreensaver/g' /home/pi/.config/lxsession/LXDE-pi/autostart
 
-echo -e '@xset s off\n	\
-				 @xset -dpms\n	\
-				 @xset s no-blank\n' >> /home/pi/.config/lxsession/LXDE-pi/autostart
+echo -e '@xset s off \n@xset -dpms \n@xset s no-blank\n' >> /home/pi/.config/lxsession/LXDE-pi/autostart
 
 ### chromiumを起動時に自動起動させる
 echo '@/home/pi/Raspberrypi_scripts/fullscreen.sh' >> /home/pi/.config/lxsession/LXDE-pi/autostart
