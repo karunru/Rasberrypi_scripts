@@ -20,13 +20,13 @@ sudo apt-get install chromium-browser -y
 sudo apt-get install fonts-mplus xfonts-mplus -y
 
 ### スクリーンセーバーを起動させない
-sed -i -e 's/@xscreensaver/#@xscreensaver/g' ~/.config/lxsession/LXDE-pi/autostart
+sed -i -e 's/@xscreensaver/#@xscreensaver/g' /home/pi/.config/lxsession/LXDE-pi/autostart
 
 echo -e '@xset s off\n	\
 				 @xset -dpms\n	\
-				 @xset s no-blank\n' >> ~/.config/lxsession/LXDE-pi/autostart
+				 @xset s no-blank\n' >> /home/pi/.config/lxsession/LXDE-pi/autostart
 
 ### chromiumを起動時に自動起動させる
-echo '@/usr/bin/chromium-browser --noerrdialog --kiosk --incognito http://nandakke.oedalab.jp/ 1>/dev/null 2>/dev/null' >> ~/.config/lxsession/LXDE-pi/autostart
-echo '@xdotool mousemove 0 1081' >> ~/.config/lxsession/LXDE-pi/autostart
+echo '@/usr/bin/chromium-browser --noerrdialog --kiosk --incognito http://nandakke.oedalab.jp/ 1>/dev/null 2>/dev/null' >> /home/pi/.config/lxsession/LXDE-pi/autostart
+echo '@xdotool mousemove 0 1081' >> /home/pi/.config/lxsession/LXDE-pi/autostart
 
