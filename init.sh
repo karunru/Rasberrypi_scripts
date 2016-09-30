@@ -1,9 +1,9 @@
 # static ipの設定
-echo -e 'static ip_address=[設定したい静的IPアドレス]/24\n	\
-
-				 static routers=[デフォルトゲートウェイのIPアドレス]\n	\
-
-				 static domsin_name_server=[DNSサーバのIPアドレス]' >> /etc/dhcpcd.conf
+# echo -e 'static ip_address=[設定したい静的IPアドレス]/24\n	\
+#
+# 				 static routers=[デフォルトゲートウェイのIPアドレス]\n	\
+#
+# 				 static domsin_name_server=[DNSサーバのIPアドレス]' >> /etc/dhcpcd.conf
 
 # ディスプレイの余白の削除
 sed -i -e 's/#disable_overscan=1/disable_overscan=1/g' /boot/config.txt
