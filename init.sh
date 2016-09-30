@@ -29,6 +29,5 @@ echo '@/home/pi/Raspberrypi_scripts/fullscreen.sh' >> /home/pi/.config/lxsession
 echo '@xdotool mousemove 0 1081' >> /home/pi/.config/lxsession/LXDE-pi/autostart
 
 ### Raspberrypi_scriptsのpull
-git clone https://github.com/karunru/Raspberrypi_scripts.git /home/pi/
 chmod 755 /home/pi/Raspberrypi_scripts/fullscreen.sh
 
