@@ -24,7 +24,11 @@ sed -i -e 's/@xscreensaver/#@xscreensaver/g' /home/pi/.config/lxsession/LXDE-pi/
 
 echo -e '@xset s off \n@xset -dpms \n@xset s no-blank\n' >> /home/pi/.config/lxsession/LXDE-pi/autostart
 
-### chromiumを起動時に自動起動させる
+### ブラうさを起動時に自動起動させる
 echo '@/home/pi/Raspberrypi_scripts/fullscreen.sh' >> /home/pi/.config/lxsession/LXDE-pi/autostart
 echo '@xdotool mousemove 0 1081' >> /home/pi/.config/lxsession/LXDE-pi/autostart
+
+### Raspberrypi_scriptsのpull
+git clone https://github.com/karunru/Raspberrypi_scripts.git /home/pi/
+chmod 755 /home/pi/Raspberrypi_scripts/fullscreen.sh
 
