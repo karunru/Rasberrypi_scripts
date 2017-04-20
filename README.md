@@ -48,6 +48,10 @@ echo -e '@xset s off\n	\
 echo '@/usr/bin/chromium-browser --noerrdialog --kiosk http://nandakke.oedalab.jp/ 1>/dev/null 2>/dev/null' >> ~/.config/lxsession/LXDE-pi/autostart
 echo '@xdotool mousemove 0 1081' >> ~/.config/lxsession/LXDE-pi/autostart
 
+### cronの設定
+
+sudo cp Raspberrypi_scripts/crontab /var/spool/cron/crontabs/pi
+
 ### その他
 GUIでロケールとかタイムゾーンとか設定
 
