@@ -17,6 +17,7 @@ sed -i -e 's/#disable_overscan=1/disable_overscan=1/g' /boot/config.txt
 # sudo apt-get install chromium-browser -y
 
 ### xdotool,日本語フォントのインストール
+sudo apt-get update
 sudo apt-get install xdotool fonts-mplus xfonts-mplus -y
 
 ### スクリーンセーバーを起動させない
