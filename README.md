@@ -50,7 +50,7 @@ echo '@xdotool mousemove 0 1081' >> ~/.config/lxsession/LXDE-pi/autostart
 
 ### cronの設定
 
-sudo cp Raspberrypi_scripts/crontab /var/spool/cron/crontabs/pi
+sudo cp Raspberrypi_scripts/crontab /etc/cron.d/crontab
 
 ### その他
 GUIでロケールとかタイムゾーンとか設定
