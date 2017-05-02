@@ -21,14 +21,14 @@ MAILTO=""
 # For more information see the manual pages of crontab(5) and cron(8)
 #
 # m h  dom mon dow   command
- 0  7 * * 1-5   pi sh /home/pi/Rasberrypi_scripts/display_on.sh
-50  8 * * 1-5   pi sh /home/pi/Rasberrypi_scripts/display_off.sh
-25 10 * * 1-5   pi sh /home/pi/Rasberrypi_scripts/display_on.sh
-35 10 * * 1-5   pi sh /home/pi/Rasberrypi_scripts/display_off.sh
-10 12 * * 1-5   pi sh /home/pi/Rasberrypi_scripts/display_on.sh
- 0 13 * * 1-5   pi sh /home/pi/Rasberrypi_scripts/display_off.sh
-35 14 * * 1-5   pi sh /home/pi/Rasberrypi_scripts/display_on.sh
-45 14 * * 1-5   pi sh /home/pi/Rasberrypi_scripts/display_off.sh
-20 16 * * 1-5   pi sh /home/pi/Rasberrypi_scripts/display_on.sh
- 0 18 * * 1-5   pi sh /home/pi/Rasberrypi_scripts/display_off.sh
- *  * * * 1-5   pi sh /home/pi/Rasberrypi_scripts/reload.sh
+ 0  7 * * 1-5   pi /home/pi/Rasberrypi_scripts/display_on.sh
+50  8 * * 1-5   pi /home/pi/Rasberrypi_scripts/display_off.sh
+25 10 * * 1-5   pi /home/pi/Rasberrypi_scripts/display_on.sh
+35 10 * * 1-5   pi /home/pi/Rasberrypi_scripts/display_off.sh
+10 12 * * 1-5   pi /home/pi/Rasberrypi_scripts/display_on.sh
+ 0 13 * * 1-5   pi /home/pi/Rasberrypi_scripts/display_off.sh
+35 14 * * 1-5   pi /home/pi/Rasberrypi_scripts/display_on.sh
+45 14 * * 1-5   pi /home/pi/Rasberrypi_scripts/display_off.sh
+20 16 * * 1-5   pi /home/pi/Rasberrypi_scripts/display_on.sh
+ 0 18 * * 1-5   pi /home/pi/Rasberrypi_scripts/display_off.sh
+ *  * * * 1-5   pi /home/pi/Rasberrypi_scripts/reload.sh
